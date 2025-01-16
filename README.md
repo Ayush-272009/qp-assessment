@@ -18,8 +18,6 @@ This project is a Node.js application built with TypeScript, Express, and MongoD
 - Book multiple grocery items in a single order.
 
 ### Advanced Features:
-- Transaction handling for atomic operations during order placement.
-- Input validation for secure and robust API usage.
 - Containerized application for easy deployment.
 
 
@@ -88,15 +86,4 @@ This project is a Node.js application built with TypeScript, Express, and MongoD
 
 ---
 
-### **Future Enhancements**
-```markdown
-## Future Enhancements
 
-- Add authentication and authorization for Admin and User roles.
-- Implement a caching mechanism for frequently accessed grocery items.
-- Add support for filtering and sorting grocery items.
-- Integrate payment processing for order placement.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
