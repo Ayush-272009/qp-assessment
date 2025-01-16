@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "ES6", // Specify ECMAScript target version
+    "module": "commonjs", // Use Node.js-style module resolution
+    "lib": ["ES6"], // Specify library files to include
+    "allowJs": false, // Don't allow JavaScript files
+    "outDir": "./dist", // Redirect output files to the "dist" folder
+    "rootDir": "./", // Specify root directory for TypeScript files
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Allow interop between CommonJS and ES Modules
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true, // Enforce consistent file casing
+
+    /* Module Resolution Options */
+    "moduleResolution": "node", // Use Node.js-style module resolution
+    "baseUrl": "./", // Base directory for module resolution
+    "paths": {
+      // Map module paths for cleaner imports
+      "@models/*": ["src/models/*"],
+      "@controllers/*": ["src/controllers/*"],
+      "@routes/*": ["src/routes/*"],
+      "@utils/*": ["src/utils/*"],
+      "@middlewares/*": ["src/middlewares/*"]
+    },
+
+    /* Source Map Options */
+    "sourceMap": true, // Generate .map files for debugging
+
+    /* Other Options */
+    "resolveJsonModule": true, // Allow importing JSON files
+    "typeRoots": ["./node_modules/@types"], // Specify where TypeScript looks for types
+    "allowSyntheticDefaultImports": true // Allow default imports from modules without them
+  },
+  "include": ["src/**/*", "routes/**/*"], // Include all files in the "src" folder
+  "exclude": ["node_modules", "dist"] // Exclude the "node_modules" and "dist" folders
+}
